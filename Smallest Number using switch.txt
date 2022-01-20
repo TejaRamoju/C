@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+void main()
+
+{
+    
+    int a,b,c;
+    printf("Enter numbers");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    switch(a<b)
+    {
+        case 0:
+        {
+        switch(b<c)
+        {
+            case 0:printf("Smallest Number is: %d",c);
+            break;
+            case 1:printf("Smallest Number is: %d",b);
+            break;
+            
+        }
+        break;
+        }
+        case 1:
+        {
+        switch(a<c)
+        {
+            case 0:printf("Smallest Number is: %d",c);
+            break;
+            case 1:printf("Smallest Number is: %d",a);
+            break;
+            
+        }
+        break;
+            
+        }
+        
+    }
+
+}

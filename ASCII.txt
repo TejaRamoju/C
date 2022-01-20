@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int a;
+    for(int a = 0; a <= 256; a++){
+        printf("Acci Value of %c is %d\n",a,a);
+    }
+    return 0;
+}

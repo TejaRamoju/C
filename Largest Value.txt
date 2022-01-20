@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+    int a,b,c;
+    printf("Enter value a:\n");
+    scanf("%d",&a);
+    printf("Enter value b:\n");
+    scanf("%d",&b);
+    printf("Enter value a:\n");
+    scanf("%d",&c);
+    if (a > b && a > c){
+        printf("Largest value is: %d",a);
+    }
+    else if (b>a && b > c){
+        printf("Largest value is: %d",b);
+    }
+    else{
+        printf("Largest value is: %d",c);
+    }
+}
