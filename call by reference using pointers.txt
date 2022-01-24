@@ -1,0 +1,17 @@
+#include <stdio.h>
+void sum(int  *var, int b)
+{
+    *var = *var+b;
+}
+int main()
+{
+    int a=0, b=0;
+    printf("Enter value of a: \n"); 
+    scanf("%d", &a);
+    printf("Enter value of b: \n");
+    scanf("%d", &b);
+    sum(&a, b);
+    printf("sum: %d", a);
+    return 0;
+    
+}
