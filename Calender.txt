@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,day,date=1,month;
+    printf(" \n Enter total no of days in month:");
+    scanf("%d",&day);
+    printf("Enter the first day 0 sun 1 mon 2 tue 3 wed 4 thu 5 fri 6 sat:");
+    scanf("%d",&a);
+    printf("Enter the month:\n");
+    scanf("%s",&month);
+    printf("\n sun\tmon\ttue\twed\tthu\tfri\tsat\n\n");
+    for(int i=a;i>0;i--)
+    {
+        printf("\t");
+    }
+    while(date<=day)
+    {
+        if(a!=0)
+        {
+            if(a%7==0)
+            printf("\n");
+        }
+        printf("%d\t",date);
+        date++;
+        a++;
+    }
+    return 0;
