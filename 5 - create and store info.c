@@ -2,15 +2,15 @@
 struct employee {
     char firstName[50];
     int emp_id;
-    char rating[5];
-} s[5];
+    char rating[10];
+} s[10];
 
 int main() {
     int i;
     printf("Enter information of employees:\n");
 
     // storing information
-    for (i = 0; i <= 5; i++) {
+    for (i = 0; i < 10; i++) {
         s[i].emp_id = i + 1;
         printf("\nEnter Employee id number %d \n", s[i].emp_id);
         scanf("\n%d",&s[i].emp_id);
@@ -21,7 +21,7 @@ int main() {
     }
     printf("Displaying Information:\n\n");
 
-    for (i = 0; i <= 5; i++) {
+    for (i = 0; i < 10; i++) {
         printf("\nEmployee Id: %d\n", i + 1);
         printf("First name: \n");
         puts(s[i].firstName);
