@@ -8,8 +8,6 @@ struct employee {
 int main() {
     int i;
     printf("Enter information of employees:\n");
-
-    // storing information
     for (i = 0; i < 10; i++) {
         s[i].emp_id = i + 1;
         printf("\nEnter Employee id number %d \n", s[i].emp_id);
